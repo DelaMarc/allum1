@@ -46,4 +46,7 @@ typedef struct	s_system
 char	*get_next_line(const int, t_system*);
 char	*my_strdup(char*);
 
+void	my_putchar(char);
+int	my_strcmp(char*, char*);
+
 #endif /* !SYSEM_H_ */

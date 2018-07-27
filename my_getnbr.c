@@ -8,6 +8,8 @@
 ** Last update Wed Feb 18 15:48:13 2015 Marc DELAUNAY
 */
 
+#include "my.h"
+
 int	my_sign(char c)
 {
   if (c == '-')

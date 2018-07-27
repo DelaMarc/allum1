@@ -31,7 +31,7 @@ SRC	= display.c \
 
 OBJ	= $(SRC:.c=.o)
 
-CC	= cc
+CC	= gcc
 
 RM	= rm -f
 
