@@ -11,14 +11,6 @@
 #include "print.h"
 #include "my.h"
 
-int	print_nb(va_list list)
-{
-  int	a;
-
-  a = va_arg(list, int);
-  my_put_nbr(a);
-  return (aff_char(a, 10));
-}
 
 int	printprc(va_list list)
 {

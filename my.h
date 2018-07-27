@@ -36,7 +36,7 @@ int	*auto_try(char**, t_system*);
 int	multiplayer(char**, t_system*);
 int	my_strlen(char*);
 int	my_getnbr(char*);
-int	my_printf(const char*, ...);
 int	start_game(char**, t_system*);
+int	my_printf(const char*, ...);
 
 #endif /* !MY_H_ */

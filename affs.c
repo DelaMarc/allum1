@@ -12,6 +12,15 @@
 #include "my.h"
 #include "print.h"
 
+int	print_nb(va_list list)
+{
+  int	a;
+
+  a = va_arg(list, int);
+  my_put_nbr(a);
+  return (aff_char(a, 10));
+}
+
 int	print_str(va_list list)
 {
   char	*a;
@@ -19,40 +28,4 @@ int	print_str(va_list list)
   a = va_arg(list, char*);
   my_putstr(a);
   return (my_strlen(a));
-}
-
-int	print_octal(va_list list)
-{
-  unsigned int	a;
-
-  a = va_arg(list, unsigned int);
-  my_putunsign_base(a, "01234567");
-  return (aff_char(a, 8));
-}
-
-int	print_bin(va_list list)
-{
-  unsigned int	a;
-
-  a = va_arg(list, unsigned int);
-  my_putunsign_base(a, "01");
-  return (aff_char(a, 2));
-}
-
-int	print_hexa_min(va_list list)
-{
-  unsigned int	a;
-
-  a = va_arg(list, unsigned int);
-  my_putunsign_base(a, "0123456789abcdef");
-  return (aff_char(a, 16));
-}
-
-int	print_hexa_maj(va_list list)
-{
-  unsigned int	a;
-
-  a = va_arg(list, unsigned int);
-  my_putunsign_base(a, "0123456789ABCDEF");
-  return (aff_char(a, 16));
 }

@@ -17,12 +17,9 @@ SRC	= display.c \
 	  my_strdup.c \
 	  opponent.c \
 	  affs.c \
-	  difficult.c \
-	  affs2.c \
-	  affs3.c \
 	  char_aff.c \
+	  difficult.c \
 	  my_put_nbr.c \
-	  my_putnbr_base.c \
 	  my_printf.c \
 	  my_strcmp.c \
 	  multi.c \

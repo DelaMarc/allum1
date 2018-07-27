@@ -26,17 +26,6 @@ int	aff_char(int nb, int base)
   return (i + 1);
 }
 
-int	val_ptr(unsigned long nb, int base)
-{
-  int	i;
-  while (nb >= base)
-    {
-      nb = nb / base;
-      i++;
-    }
-  return (i + 1);
-}
-
 void	my_putchar(char c)
 {
   write(1, &c, 1);
